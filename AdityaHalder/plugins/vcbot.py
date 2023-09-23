@@ -74,7 +74,7 @@ def time_to_seconds(time):
 
 
 @Client.on_message(
-    commandpro([".ply", "ply"]) & SUDOERS)
+    commandpro([".play", "ply"]) & SUDOERS)
 async def play(_, message: Message):
     global que
     global useer
@@ -176,7 +176,7 @@ async def play(_, message: Message):
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) in ACTV_CALLS:
         position = await queues.put(chat_id, file=file_path)
-        await lel.edit("**💥 𝐊𝐚𝐚𝐥🤞𝐀𝐝𝐝𝐞𝐝 💿 𝐒𝐨𝐧𝐠❗️\n🔊 𝐀𝐭 💞 𝐏𝐨𝐬𝐢𝐭𝐢𝐨𝐧 » `{}` 🌷 ...**".format(position),
+        await lel.edit("**💥 𝐒𝐀𝐑𝐊𝐀𝐑🤞𝐀𝐝𝐝𝐞𝐝 💿 𝐒𝐨𝐧𝐠❗️\n🔊 𝐀𝐭 💞 𝐏𝐨𝐬𝐢𝐭𝐢𝐨𝐧 » `{}` 🌷 ...**".format(position),
     )
     else:
         await clientbot.pytgcalls.join_group_call(
@@ -189,7 +189,7 @@ async def play(_, message: Message):
                 stream_type=StreamType().local_stream,
             )
 
-        await lel.edit("**💥 𝐊𝐚𝐚𝐥🤞𝐌𝐮𝐬𝐢𝐜 🎸 𝐍𝐨𝐰 💞\n🔊 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 😍 𝐎𝐏 🥀 ...**".format(),
+        await lel.edit("**💥 𝐒𝐀𝐑𝐊𝐀𝐑🤞𝐌𝐮𝐬𝐢𝐜 🎸 𝐍𝐨𝐰 💞\n🔊 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 😍 𝐎𝐏 🥀 ...**".format(),
         )
 
     return await lel.delete()
@@ -227,7 +227,7 @@ async def resume(_, message: Message):
         await rsum.delete()
 
 
-@Client.on_message(commandpro([".skp", "skp"]) & SUDOERS)
+@Client.on_message(commandpro([".skip", "skip"]) & SUDOERS)
 async def skip(_, message: Message):
     global que
     await message.delete()
@@ -283,7 +283,7 @@ async def stop(_, message: Message):
 
 @Client.on_message(commandpro([".song", "sng", ".sng", ".msc", "msc"]) & SUDOERS)
 async def song(client, message):
-    cap = "**🥀 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝 𝐁𝐲 ː [𝐌𝐫᭄'𝐊𝐚𝐚𝐋-𝐱𝐃](https://t.me/iamkaal)**"
+    cap = "**🥀 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝 𝐁𝐲 ː [𝐒𝐀𝐑𝐊𝐀𝐑](https://t.me/ll_SARKAR_BABE_ll)**"
     rkp = await message.reply("**🔄 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠 ...**")
 
     if len(message.command) < 2:
@@ -385,10 +385,10 @@ __MODULE__ = "Vᴄ Bᴏᴛ"
 __HELP__ = f"""
 **Yᴏᴜ Cᴀɴ Pʟᴀʏ Mᴜsɪᴄ Oɴ VC**
 
-`.ply` - Pʟᴀʏ Mᴜsɪᴄ Oɴ Vᴄ
+`.play` - Pʟᴀʏ Mᴜsɪᴄ Oɴ Vᴄ
 `.pse` - Pᴀᴜsᴇ Yᴏᴜʀ Mᴜsɪᴄ
 `.rsm` - Rᴇsᴜᴍᴇ Yᴏᴜʀ Mᴜsɪᴄ
-`.skp` - Sᴋɪᴘ Tᴏ Tʜᴇ Nᴇxᴛ Sᴏɴɢ
+`.skip` - Sᴋɪᴘ Tᴏ Tʜᴇ Nᴇxᴛ Sᴏɴɢ
 `.stp` - Sᴛᴏᴘ Pʟᴀʏɪɴɢ Aɴᴅ Lᴇᴀᴠᴇ
 `.sng` - Dᴏᴡɴʟᴏᴀᴅ Sᴏɴɢ Yᴏᴜ Wᴀɴᴛ
 `.rld` - Rᴇʟᴏᴀᴅ Yᴏᴜʀ VC Cʟɪᴇɴᴛ
