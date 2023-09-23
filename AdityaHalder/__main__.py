@@ -60,12 +60,12 @@ async def initiate_bot():
             status="[bold blue]Importation Completed!",
         )
     console.print(
-        "[bold green] 🥀 Genius Userbot Started ✨\n"
+        "[bold green] 🥀 SARKAR Userbot Started ✨\n"
     )
     try:
         await robot.send_message(
             LOG_GROUP_ID,
-            "<b> 🥀 Genius UserBot is Here ✨</b>",
+            "<b> 🥀 SARKAR UserBot is Here ✨</b>",
         )
     except Exception as e:
         print(
@@ -84,7 +84,7 @@ async def initiate_bot():
         try:
             await client.send_message(
                 LOG_GROUP_ID,
-                "<b>🥀 Genius UserBot is Active ✨</b>",
+                "<b>🥀 SARKAR UserBot is Active ✨</b>",
             )
         except Exception as e:
             print(
@@ -93,44 +93,42 @@ async def initiate_bot():
             console.print(f"\n[red] Stopping Bot")
             return
         try:
-            await client.join_chat("AdityaServer")
-            await client.join_chat("AdityaDiscus")
+            await client.join_chat("TKS_JOIN")
+            await client.join_chat("TKS_JOIN")
         except:
             pass
         console.print(f"├[red] UserBot Started as {ASSNAME}")
         console.print(f"├[green] ID :- {ASSID}")
-        console.print(f"└[red] ✅ Genius UserBot Boot Complete 💯 ...")
+        console.print(f"└[red] ✅ SARKAR UserBot Boot Complete 💯 ...")
         await idle()
         console.print(f"\n[red] Userbot Stopped")
 
 
 home_text_pm = f"""**ʜᴇʟʟᴏ ,
 ᴍʏ ɴᴀᴍᴇ ɪs {BOT_NAME}.
-I Aᴍ Gᴇɴɪᴜs, Aɴ Aᴅᴠᴀɴᴄᴇᴅ UsᴇʀBᴏᴛ Wɪᴛʜ Sᴏᴍᴇ Usᴇғᴜʟ Fᴇᴀᴛᴜʀᴇs.**"""
+I Aᴍ SARKAR, Aɴ Aᴅᴠᴀɴᴄᴇᴅ UsᴇʀBᴏᴛ Wɪᴛʜ Sᴏᴍᴇ Usᴇғᴜʟ Fᴇᴀᴛᴜʀᴇs.**"""
 
 
 @robot.on_message(command(["start"]) & filters.private)
 async def start(_, message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/027283ee9defebc3298b8.png",
+        photo=f"https://telegra.ph/file/fe80e5e6315118f0c49a0.jpg",
         caption=f"""**━━━━━━━━━━━━━━━━━━━━━━━━
-💥 Hᴇʟʟᴏ, I Aᴍ Gᴇɴɪᴜs » Aɴ Aᴅᴠᴀɴᴄᴇᴅ
+💥 Hᴇʟʟᴏ, I Aᴍ SARKAR » Aɴ Aᴅᴠᴀɴᴄᴇᴅ
 Pʀᴇᴍɪᴜᴍ Tᴇʟᴇɢʀᴀᴍ Usᴇʀ Bᴏᴛ.
 
 ┏━━━━━━━━━━━━━━━━━━━┓
-┣★ Oᴡɴᴇʀ'xD› : [Aᴅɪᴛʏᴀ Hᴀʟᴅᴇʀ](https://t.me/adityahalder)
-┣★ Uᴘᴅᴀᴛᴇs ›› : [Aᴅɪᴛʏᴀ Sᴇʀᴠᴇʀ](https://t.me/adityaserver)
-┣★ Sᴜᴘᴘᴏʀᴛ » : [Aᴅɪᴛʏᴀ Dɪsᴄᴜs](https://t.me/adityadiscus)
+┣★ Oᴡɴᴇʀ'xD› : [Aᴅɪᴛʏᴀ Hᴀʟᴅᴇʀ](https://t.me/ll_SARKAR_BABE_ll)
 ┗━━━━━━━━━━━━━━━━━━━┛
 
 💞 Cʟɪᴄᴋ Oɴ Dᴇᴘʟᴏʏ Bᴜᴛᴛᴏɴ Tᴏ Mᴀᴋᴇ
-Yᴏᴜʀ Oᴡɴ » Gᴇɴɪᴜs Usᴇʀ Bᴏᴛ.
+Yᴏᴜʀ Oᴡɴ » SARKAR Usᴇʀ Bᴏᴛ.
 ━━━━━━━━━━━━━━━━━━━━━━━━**""",
     reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💥 Dᴇᴘʟᴏʏ Gᴇɴɪᴜs UsᴇʀBᴏᴛ ✨", url=f"https://github.com/GeniusBoi/Genius-UserBot")
+                        "💥 SARKAR UsᴇʀBᴏᴛ ✨", url=f"https://t.me/ll_SARKAR_BABE_ll")
                 ]
                 
            ]
@@ -152,10 +150,10 @@ async def help_parser(name, keyboard=None):
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
         """**🥀 Wᴇʟᴄᴏᴍᴇ Tᴏ Hᴇʟᴘ Mᴇɴᴜ Oғ :
-Gᴇɴɪᴜs UsᴇʀBᴏᴛ Vᴇʀ : `2.0` 🔥...
+SARKAR UsᴇʀBᴏᴛ Vᴇʀ : `2.0` 🔥...
 
 💞 Jᴜsᴛ Cʟɪᴄᴋ Oɴ Bᴇʟᴏᴡ Iɴʟɪɴᴇ
-Tᴏ Gᴇᴛ Gᴇɴɪᴜs Cᴏᴍᴍᴀɴᴅs ✨...**
+Tᴏ Gᴇᴛ SARKAR Cᴏᴍᴍᴀɴᴅs ✨...**
 """.format(
             first_name=name
         ),
@@ -166,7 +164,7 @@ Tᴏ Gᴇᴛ Gᴇɴɪᴜs Cᴏᴍᴍᴀɴᴅs ✨...**
 async def close(_, CallbackQuery):
     await CallbackQuery.message.delete()
 
-@robot.on_callback_query(filters.regex("aditya") & SUDOERS)
+@robot.on_callback_query(filters.regex("SARKAR") & SUDOERS)
 async def aditya(_, CallbackQuery):
     text, keyboard = await help_parser(CallbackQuery.from_user.mention)
     await CallbackQuery.message.edit(text, reply_markup=keyboard)
@@ -181,10 +179,10 @@ async def help_button(client, query):
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
     top_text = f"""**🥀 Wᴇʟᴄᴏᴍᴇ Tᴏ Hᴇʟᴘ Mᴇɴᴜ Oғ :
-Gᴇɴɪᴜs UsᴇʀBᴏᴛ Vᴇʀ : `2.0` 🔥...
+SARKAR UsᴇʀBᴏᴛ Vᴇʀ : `2.0` 🔥...
 
 💞 Jᴜsᴛ Cʟɪᴄᴋ Oɴ Bᴇʟᴏᴡ Iɴʟɪɴᴇ
-Tᴏ Gᴇᴛ Gᴇɴɪᴜs Cᴏᴍᴍᴀɴᴅs ✨...**
+Tᴏ Gᴇᴛ SARKAR Cᴏᴍᴍᴀɴᴅs ✨...**
  """
     if mod_match:
         module = mod_match.group(1)
